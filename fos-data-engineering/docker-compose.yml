@@ -1,0 +1,10 @@
+version: '3'
+services:
+web:
+ build:
+ context: .
+ dockerfile: weather-app.Dockerfile
+ ports:
+ - "5000:5000"
+db:
+ image: "redis:alpine"
